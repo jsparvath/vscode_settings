@@ -1,0 +1,85 @@
+{
+  "window.zoomLevel": 0,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "xml": {
+      "attr_quotes": "single"
+    }
+  },
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "editor.tabSize": 2,
+  "emojisense.languages": {
+    "markdown": true,
+    "git-commit": false,
+    "plaintext": false,
+    "json": true,
+    "javascript": true,
+    "javascriptreact": true,
+    "html": true,
+    "css": true,
+    "scss": true
+  },
+  "emojisense.unicodeCompletionsEnabled": true,
+  "emojisense.showOnColon": true,
+  "files.autoSave": "afterDelay",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["\""],
+      "after": ["c", "\"", "\"", "<ESC>", "h", "p", "l", "l", "a", "<ESC>"]
+    },
+    {
+      "before": ["'"],
+      "after": ["c", "'", "'", "<ESC>", "h", "p", "l", "l", "a", "<ESC>"]
+    },
+    {
+      "before": ["["],
+      "after": ["c", "[", "]", "<ESC>", "h", "p", "l", "l", "a", "<ESC>"]
+    },
+    {
+      "before": ["{"],
+      "after": ["c", "{", "}", "<ESC>", "h", "p", "l", "l", "a", "<ESC>"]
+    },
+    {
+      "before": ["("],
+      "after": ["c", "(", ")", "<ESC>", "h", "p", "l", "l", "a", "<ESC>"]
+    },
+    {
+      "before": ["`"],
+      "after": ["c", "`", "`", "<ESC>", "h", "p", "l", "l", "a", "<ESC>"]
+    }
+  ],
+  "vim.useCtrlKeys": false,
+  "editor.lineNumbers": "relative",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "[python]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": false
+    }
+  },
+
+  "files.autoSaveDelay": 1500,
+  "breadcrumbs.enabled": false,
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.colorCustomizations": {
+    "editor.background": "#282b33",
+    // "editor.background": "#30333b",
+    "tab.activeBackground": "#30333b",
+    "activityBar.background": "#373944",
+    "list.activeSelectionBackground": "#373944",
+    "editorCursor.foreground": "#1d83c8"
+  },
+  "editor.minimap.enabled": false
+}
