@@ -61,8 +61,10 @@
   "editor.lineNumbers": "relative",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true
+    "source.fixAll.tslint": true
+    // "source.organizeImports": true
   },
+  "tslint.autoFixOnSave": true,
   "[python]": {
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
@@ -71,7 +73,7 @@
   },
 
   "files.autoSaveDelay": 1500,
-  "breadcrumbs.enabled": false,
+  "breadcrumbs.enabled": true,
   "workbench.colorTheme": "Atom One Dark",
   "workbench.colorCustomizations": {
     "editor.background": "#282b33",
