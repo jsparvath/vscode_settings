@@ -83,5 +83,7 @@
     "list.activeSelectionBackground": "#373944",
     "editorCursor.foreground": "#1d83c8"
   },
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false
 }
