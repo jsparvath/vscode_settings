@@ -25,6 +25,13 @@
   "emojisense.showOnColon": true,
   "files.autoSave": "afterDelay",
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "auto-close-tag.activationOnLanguage": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    "xml",
+    "php"
+  ],
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "k"],
