@@ -65,7 +65,6 @@
     }
   ],
   "vim.useCtrlKeys": false,
-  "editor.lineNumbers": "relative",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.tslint": true
