@@ -79,7 +79,7 @@
   },
 
   "files.autoSaveDelay": 1500,
-  "breadcrumbs.enabled": true,
+  "breadcrumbs.enabled": false,
   "workbench.colorTheme": "Atom One Dark",
   "workbench.colorCustomizations": {
     "editor.background": "#282b33",
