@@ -1,7 +1,20 @@
 // Place your key bindings in this file to override the defaults
 [
-  { "key": "ctrl+n", "command": "explorer.newFile" },
-  { "key": "ctrl+shift+n", "command": "explorer.newFolder"},
-  { "key": "ctrl+w", "command": "workbench.action.closeActiveEditor"}
-  
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "explorer.newFolder"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "shift+Enter",
+    "command": "extension.vim_escape",
+    "when": "editorTextFocus"
+  }
 ]

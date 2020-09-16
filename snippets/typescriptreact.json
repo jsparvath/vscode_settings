@@ -28,18 +28,41 @@
       "export default $TM_FILENAME_BASE"
     ]
   },
-  "react stateless component TypeScript": {
+  "react functional component TypeScript": {
     "prefix": "_rft",
     "body": [
       "import React from 'react';",
       "",
-      "const $TM_FILENAME_BASE: React.FC = () => {",
+      "interface IProps {};",
+      "",
+      "const $TM_FILENAME_BASE: React.FC<IProps> = () => {",
       "\treturn (",
       "\t\t<div>",
       "\t\t\t$0",
       "\t\t</div>",
       "\t)",
       "}",
+      "",
+      "export default $TM_FILENAME_BASE"
+    ]
+  },
+  "ReactNative functional component TypeScript": {
+    "prefix": "_rnft",
+    "body": [
+      "import React from 'react';",
+      "import { View, StyleSheet } from 'react-native';",
+      "",
+      "interface IProps {};",
+      "",
+      "const $TM_FILENAME_BASE: React.FC<IProps> = () => {",
+      "\treturn (",
+      "\t\t<View>",
+      "\t\t\t$0",
+      "\t\t</View>",
+      "\t)",
+      "}",
+      "",
+      "const styles = StyleSheet.create({})",
       "",
       "export default $TM_FILENAME_BASE"
     ]
