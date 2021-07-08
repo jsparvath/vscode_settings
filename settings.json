@@ -1,5 +1,4 @@
 {
-  "window.zoomLevel": 1,
   "emmet.syntaxProfiles": {
     "javascript": "jsx",
     "xml": {
@@ -13,6 +12,8 @@
   "files.associations": {
     "*.js": "javascriptreact"
   },
+  // "gitlens.codeLens.enabled": false,
+  // "editor.codeLens": false,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.detectIndentation": false,
@@ -37,12 +38,6 @@
     "html",
     "xml",
     "php"
-  ],
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "k"],
-      "after": ["<Esc>"]
-    }
   ],
   "vim.visualModeKeyBindings": [
     {
@@ -76,6 +71,9 @@
   },
   // "tslint.autoFixOnSave": true,
   "editor.formatOnSave": true,
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
   "[python]": {
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
@@ -85,58 +83,44 @@
   "breadcrumbs.enabled": false,
   "workbench.colorTheme": "Atom One Dark",
   "workbench.colorCustomizations": {
-    "editor.background": "#282b33",
+    "editor.background": "#21252B",
     "tab.activeBackground": "#30333b",
     "activityBar.background": "#373944",
     "list.activeSelectionBackground": "#373944",
     "editorCursor.foreground": "#1d83c8"
   },
+  "workbench.productIconTheme": "icons-carbon",
+  "editor.renderIndentGuides": false,
+  "editor.renderWhitespace": "none",
+  "editor.fontSize": 13.5,
+  "editor.fontFamily": "Menlo",
+  
+
   "editor.minimap.enabled": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "explorer.confirmDragAndDrop": false,
   "keyboard.dispatch": "keyCode",
   "workbench.tree.indent": 18,
-  "fastFolderStructure.structures": [
+  "folderTemplates.structures": [
     {
-      "name": "typescript-simple",
+      "name": "TypeScript Functional Component",
       "structure": [
         {
-          "fileName": "<FFSName>.tsx",
-          "template": "typescript-simple"
+          "fileName": "<FTName>.tsx",
+          "template": "typescript-functional-component"
         },
         {
           "fileName": "index.ts",
-          "template": "IndexTS"
+          "template": "index-typescript"
         }
       ]
     },
     {
-      "name": "typescript-materialUI-styledComponents",
+      "name": "TypeScript MaterialUI",
       "structure": [
         {
-          "fileName": "<FFSName>.tsx",
-          "template": "FFSNameTSX"
-        },
-        {
-          "fileName": "index.ts",
-          "template": "IndexTS"
-        },
-        {
-          "fileName": "<FFSName>.stories.tsx",
-          "template": "FFSNameStoryTSX"
-        },
-        {
-          "fileName": "styles.ts",
-          "template": "MaterialStyles"
-        }
-      ]
-    },
-    {
-      "name": "typescript-materialUI",
-      "structure": [
-        {
-          "fileName": "<FFSName>.tsx",
-          "template": "FFSNameTSX"
+          "fileName": "<FTName>.tsx",
+          "template": "FTNameTSX"
         },
         {
           "fileName": "index.ts",
@@ -148,76 +132,35 @@
         }
       ]
     },
-    {
-      "name": "typescript-reactNative",
-      "structure": [
-        {
-          "fileName": "<FFSName>.tsx",
-          "template": "TRN"
-        },
-        {
-          "fileName": "index.ts",
-          "template": "IndexTS"
-        }
-      ]
-    }
   ],
-  "fastFolderStructure.fileTemplates": {
-    "FFSNameTSX": [
+  "folderTemplates.fileTemplates": {
+    "FTNameTSX": [
       "import React from 'react';",
       "import useStyles from './styles'",
       "",
-      "interface I<FFSName> {}",
+      "interface I<FTName> {}",
       "",
-      "const <FFSName> = ({}: I<FFSName>) => {",
+      "const <FTName> = ({}: I<FTName>) => {",
       "const classes = useStyles()",
       "  return <div/>;",
       "};",
       "",
-      "export default <FFSName>;"
+      "export default <FTName>;"
     ],
-    "typescript-simple": [
-      "import React from 'react';",
-      "",
-      "interface I<FFSName> {}",
-      "",
-      "const <FFSName> = ({}: I<FFSName>) => {",
-      "  return <div/>;",
-      "};",
-      "",
-      "export default <FFSName>;"
-    ],
-    "IndexTS": ["export { default } from './<FFSName>'"],
-    "FFSNameStoryTSX": [
+    "typescript-functional-component": [
       "import React from 'react'",
-      "import <FFSName> from '.'",
       "",
-      "export default { title: '<FFSName>' }",
+      "interface <FTName>Props {}",
       "",
-      "export const <FFSName | lowercase> = () => {",
-      "return (",
-      "<<FFSName>/>",
-      ")",
-      "}"
+      "export const <FTName> = ({}: <FTName>Props) => {",
+      "  return <div />;",
+      "}",
     ],
+    "index-typescript": ["export * from './<FTName>'"],
     "MaterialStyles": [
       "import { makeStyles } from '@material-ui/core'",
       "export default makeStyles({})"
     ],
-    "TRN": [
-      "import React from 'react';",
-      "import { View, StyleSheet } from \"react-native\"",
-      "",
-      "interface IProps {}",
-      "",
-      "const <FFSName>: React.FC<IProps> = () => {",
-      "return <View></View>;",
-      "};",
-      "",
-      "const styles = StyleSheet.create({});",
-      "",
-      "export default <FFSName>;"
-    ]
   },
   "explorer.compactFolders": false,
   "javascript.preferences.importModuleSpecifier": "non-relative",
@@ -233,5 +176,23 @@
   },
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
-  "editor.trimAutoWhitespace": false
+  "editor.trimAutoWhitespace": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[csharp]": {
+    "editor.tabSize": 4,
+    "editor.formatOnSave": false
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

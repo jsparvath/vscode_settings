@@ -13,8 +13,34 @@
     "command": "workbench.action.closeActiveEditor"
   },
   {
-    "key": "shift+Enter",
+    "key": "shift+space",
     "command": "extension.vim_escape",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+space",
+    "command": "editor.action.triggerParameterHints",
+    "when": "editorHasSignatureHelpProvider && editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+space",
+    "command": "-editor.action.triggerParameterHints",
+    "when": "editorHasSignatureHelpProvider && editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "editor.emmet.action.balanceIn"
+  },
+  {
+    "key": "shift+cmd+k",
+    "command": "editor.emmet.action.balanceOut"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "editor.action.transformToUppercase"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "editor.action.transformToLowercase"
   }
 ]

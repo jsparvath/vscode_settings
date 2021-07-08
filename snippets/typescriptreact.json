@@ -33,9 +33,9 @@
     "body": [
       "import React from 'react';",
       "",
-      "interface IProps {};",
+      "interface I$TM_FILENAME_BASE {};",
       "",
-      "const $TM_FILENAME_BASE: React.FC<IProps> = () => {",
+      "const $TM_FILENAME_BASE = ({}: I$TM_FILENAME_BASE) => {",
       "\treturn (",
       "\t\t<div>",
       "\t\t\t$0",
